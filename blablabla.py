@@ -44,6 +44,23 @@ kalkulatorSum = eval(kalkulatorStr)
 printArray.append(kalkulatorStr + " = " + str(kalkulatorSum))
 
 
+#Oppgave 9
+e = 2.71828
+pi = 3.14159
+
+if e > pi:
+    printArray.append(str(e) + " > " + str(pi) + " True")
+else:
+    printArray.append(str(e) + " > " + str(pi) + " False")
+
+
+#Oppgave 10
+feteTall1 = 12
+feteTall2 = 321
+feteTall3 = -42
+feteTall4 = -76
+feteTall5 = 28
+feteTall6 = -199
 
 
 
