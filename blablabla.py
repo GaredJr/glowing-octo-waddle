@@ -57,16 +57,19 @@ else:
 
 #Oppgave 10
 feteTall = [
-    12,
-    312,
-    -42,
-    -76,
-    28,
-    -199       
+    12.2,
+    312.65,
+    -42.123,
+    -76.13,
+    28.99,
+    -199.999       
 ]
 
 fetStringTilFeteTall = str("Fete Tall: " + str(feteTall) + "\nMax: " + str(max(feteTall)) + "\nMin: " + str(min(feteTall)) + "\nAbsolutt: " + str(abs(feteTall[random.randint(1, len(feteTall))])) + "\nAvrundet: " + str(round(feteTall[random.randint(1, len(feteTall))])))
 printArray.append(fetStringTilFeteTall)
+
+
+#Oppgave 11
 
 
 
