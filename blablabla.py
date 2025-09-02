@@ -36,6 +36,8 @@ fetSkatt = float(input("Hvor mye skatter du i prosent? (f.eks 0.22 for 22%) "))
 fetutskrift5 = "Din bruttolønn per dag er: " + str(fetTimesLonn) + "\n Din nettolønn per dag er: " + str(fetTimesLonn - fetTimesLonn * fetSkatt) + "\n Du betaler " + str(fetTimesLonn * fetSkatt) + " i skatt hver arbeidsdag."
 printArray.append(fetutskrift5)
 
+#Oppgave 7
+printArray.append(colored("Denne oppgaven blir gjort i neste oppgave", color="yellow"))
 
 #Oppgave 7 og 8
 print("KALKULATOR!!!!")
@@ -70,8 +72,29 @@ printArray.append(fetStringTilFeteTall)
 
 
 #Oppgave 11
+brukerNavn = str(input("Hva er ditt fulle navn? "))
+fetStringTilBrukerNavn = "Navnet ditt har en lengde på: " + str(len(brukerNavn))
+printArray.append(fetStringTilBrukerNavn)
 
 
+#Oppgave 12
+if 50/3 > 20:
+    printArray.append("50" + " > " + "20" + " True")
+else:
+    printArray.append("50" + " > " + "20" + " False")
+
+
+#Oppgave 13
+moduloString = "Modulo sjekker hvor mange ganger f.eks 2 går opp i 5, \n og gir det som skal til for å fullføre tallet 5.\n\n 2 går 2 ganger opp i 5, og mangler 1 for å fullføre tallet. \n 2 % 5 gir derfor 1."
+printArray.append(moduloString)
+
+
+
+#Oppgave 14
+printArray.append(colored("Denne oppgaven ble gjort i tidligere oppgaver", color="yellow"))
+
+
+#Oppgave 15
 
 #printArray
 printString = ""
