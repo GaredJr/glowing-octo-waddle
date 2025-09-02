@@ -95,6 +95,32 @@ printArray.append(colored("Denne oppgaven ble gjort i tidligere oppgaver", color
 
 
 #Oppgave 15
+bilerSolgt = int(input("Hvor mange biler har du solgt? "))
+bonus = 0
+if bilerSolgt >= 70:
+    bonus = 5000
+
+bilLonn = 500 * bilerSolgt + bonus
+printArray.append(f"Du tjente {bilLonn}kr på {bilerSolgt} biler solgt, du fikk {bonus}kr i bonus.")
+
+
+#Oppgave 16
+printArray.append(colored("Denne oppgaven ble gjort i tidligere oppgaver", color="yellow"))
+
+
+#Oppgave 17
+brusOgGodis = int(input("Hvor mye penger har du til brus og godis? "))
+printArray.append(f"Du kan kjøpe {round(brusOgGodis/30)} godis og {round(brusOgGodis/20)} brus med {brusOgGodis}kr.")
+
+
+#Oppgave 18
+nostetVariabel = 5
+if nostetVariabel > 4 and nostetVariabel % 2:
+    printArray.append("Partall!")
+else:
+    printArray.append("Hmm!")
+
+
 
 #printArray
 printString = ""
