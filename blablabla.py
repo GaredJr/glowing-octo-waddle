@@ -1,4 +1,5 @@
 from termcolor import colored
+import random
 printArray = []
 
 
@@ -55,12 +56,17 @@ else:
 
 
 #Oppgave 10
-feteTall1 = 12
-feteTall2 = 321
-feteTall3 = -42
-feteTall4 = -76
-feteTall5 = 28
-feteTall6 = -199
+feteTall = [
+    12,
+    312,
+    -42,
+    -76,
+    28,
+    -199       
+]
+
+fetStringTilFeteTall = str("Fete Tall: " + str(feteTall) + "\nMax: " + str(max(feteTall)) + "\nMin: " + str(min(feteTall)) + "\nAbsolutt: " + str(abs(feteTall[random.randint(1, len(feteTall))])) + "\nAvrundet: " + str(round(feteTall[random.randint(1, len(feteTall))])))
+printArray.append(fetStringTilFeteTall)
 
 
 
