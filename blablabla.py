@@ -1,5 +1,7 @@
 from termcolor import colored
 import random
+import math
+
 printArray = []
 
 
@@ -67,7 +69,7 @@ feteTall = [
     -199.999       
 ]
 
-fetStringTilFeteTall = str("Fete Tall: " + str(feteTall) + "\nMax: " + str(max(feteTall)) + "\nMin: " + str(min(feteTall)) + "\nAbsolutt: " + str(abs(feteTall[random.randint(1, len(feteTall))])) + "\nAvrundet: " + str(round(feteTall[random.randint(1, len(feteTall))])))
+fetStringTilFeteTall = str("Fete Tall: " + str(feteTall) + "\nMax: " + str(max(feteTall)) + "\nMin: " + str(min(feteTall)) + "\nAbsolutt: " + str(abs(feteTall[random.randint(1, len(feteTall)-1)])) + "\nAvrundet: " + str(round(feteTall[random.randint(1, len(feteTall)-1)])))
 printArray.append(fetStringTilFeteTall)
 
 
@@ -120,6 +122,76 @@ if nostetVariabel > 4 and nostetVariabel % 2:
 else:
     printArray.append("Hmm!")
 
+
+#Oppgave 2.1
+strForRange = ""
+for i in range(5):
+    strForRange += "Dette printes! \n"
+
+printArray.append(strForRange)
+
+
+#Oppgave 2.2
+printArray.append("Boolean er en True eller False verdi. \n String er en tekstverdi. \n Integer er et helt tall. \n Float er et tall med desimaler.")
+
+
+#Oppgave 2.3
+whileIntBleh = 0
+while whileIntBleh < 7:
+    whileIntBleh += 1
+
+printArray.append(colored("Sjekk koden", color="yellow"))
+
+
+#Oppgave 2.4
+whileIntBleh1 = 10
+while whileIntBleh1 < 20:
+    whileIntBleh1 += 1
+
+printArray.append(colored("Sjekk koden igjen", color="yellow"))
+
+
+#Oppgave 2.5
+whileStrBleh = ""
+whileArrayBleh = []
+whiletest = True
+while whileStrBleh.upper() != "EXIT" :
+    whileStrBleh = str(input("Skriv exit når du vil stoppe. "))
+    whileArrayBleh.append(whileStrBleh)
+
+printArray.append(str(whileArrayBleh))
+
+
+#Oppgave 2.6
+printArray.append(colored("Sjekk tidligere kode", color="yellow"))
+
+#Oppgave 2.7
+printArray.append(colored("Sjekk tidligere kode", color="yellow"))
+
+
+#Oppgave 2.8
+forArrayTwoPointEightBleh = []
+for i in range(10, 2):
+    forArrayTwoPointEightBleh.append(i)
+
+printArray.append(forArrayTwoPointEightBleh)
+
+
+#Oppgave 2.9
+forArrayTwoPointNineBleh = []
+for i in range(5):
+    forArrayTwoPointNineBleh.append(5-i)
+
+
+#Oppgave 2.10
+rutenettStr = ""
+rutenettRange = 9
+for i in range(rutenettRange):
+    rutenettStr += f" {i+1} "
+    if i+1 == math.sqrt(rutenettRange) or i == math.sqrt(rutenettRange) * 2:
+        rutenettStr += "\n"
+
+printArray.append(rutenettStr)
 
 
 #printArray
