@@ -171,10 +171,10 @@ printArray.append(colored("Sjekk tidligere kode", color="yellow"))
 
 #Oppgave 2.8
 forArrayTwoPointEightBleh = []
-for i in range(10, 2):
+for i in range(1, 10, 2):
     forArrayTwoPointEightBleh.append(i)
 
-printArray.append(forArrayTwoPointEightBleh)
+printArray.append(str(forArrayTwoPointEightBleh))
 
 
 #Oppgave 2.9
@@ -188,11 +188,60 @@ rutenettStr = ""
 rutenettRange = 9
 for i in range(rutenettRange):
     rutenettStr += f" {i+1} "
-    if i+1 == math.sqrt(rutenettRange) or i == math.sqrt(rutenettRange) * 2:
+    if i+1 == math.sqrt(rutenettRange) or i+1 == math.sqrt(rutenettRange) * 2:
         rutenettStr += "\n"
 
-printArray.append(rutenettStr)
+printArray.append(str(rutenettStr))
 
+
+#Oppgave 2.11
+if "e" in "Steep":
+    printArray.append("Bokstaven E er i Steep")
+
+#Oppgave 2.12
+tekstGreie = "Uten mat og drikke, duger helten ikke"
+vokalGreier = "aeiouyæøå"
+
+sumVokaler = []
+sumKonstonanter = []
+
+
+for l in vokalGreier:
+    if l in tekstGreie:
+        sumVokaler.append(l)
+    else:
+        tekstGreie.replace(l, "")
+
+tekstGreie.replace(" ", "")
+tekstGreie.replace(",", "")
+for i in tekstGreie:
+    if i not in sumKonstonanter:
+        sumKonstonanter.append(i)
+
+printArray.append(f"Vokaler: {str(sumVokaler)}, \nKonstonanter: {str(sumKonstonanter)}")
+
+
+#Oppgave 2.13
+blehhh = f""
+
+for i in range(10):
+    i+=1
+    if i == 6:
+        continue
+    blehhh += f"{i}, \n"
+
+printArray.append(blehhh)
+
+
+#Oppgave 2.14
+
+kkj = 0
+for i in range(10, 20):
+    kkj += i
+    if kkj >= 50:
+        break
+
+printArray.append(str(kkj))
 
 #printArray
 printString = ""
